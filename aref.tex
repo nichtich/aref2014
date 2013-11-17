@@ -1,0 +1,132 @@
+% add. options: [seceqn,secfloat,secthm,crcready,onecolumn]
+
+\documentclass[sw]{iosart2c}
+
+\usepackage[T1]{fontenc}
+\usepackage{times}%
+\usepackage{natbib}% for bibliography sorting/compressing
+%\usepackage{amsmath}
+%\usepackage{endnotes}
+%\usepackage{graphics}
+
+\bibliographystyle{abbrv} % plain or abbrv
+
+%%%%%%%%%%% Put your definitions here
+
+
+%%%%%%%%%%% End of definitions
+
+\pubyear{2014}
+\volume{XXX}
+\firstpage{1}
+\lastpage{n}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%\pretitle{}
+\title{Another RDF encoding form}
+%\runningtitle{}
+\subtitle{Add a a catchy subtitle here}
+    % for instance "JSON-LD sucks, Turtle is not good enough
+
+%\review{}{}{}
+
+\author{\fnms{Jakob} \snm{Vo\ss}}%\thanks{}} 
+\address{Verbundzentrale des GBV (VZG), Platz der G\"ottinger Sieben 1, 37073 G\"ottingen, Germany}
+\runningauthor{}
+
+\begin{abstract}
+    An abstract has yet to be written.
+\end{abstract}
+
+\begin{keyword}
+ \sep keyword1
+ \sep keyword2
+ \sep \ldots
+\end{keyword}
+
+\end{frontmatter}
+
+%%%%%%%%%%% The article body starts:
+
+% Part One is problem description/definition, and
+% a literature review upon the state of the art
+\section{Introduction}\label{introduction}
+
+\begin{itemize}
+    \item Hello, World!
+    \item What is an RDF serialization and what RDF serializations exist?
+    \item Problems and difficulties with existing RDF serializations.
+\end{itemize}
+
+% See http://www.dajobe.org/talks/200705-textual/#%2828%29
+
+RDF/XML \cite{Beckett2004},
+Turtle \cite{Prudhommeaux2013}, 
+originally suggested as N-Triples plus \cite{Beckett2003},
+%\footnote{
+%See \url{http://www.dajobe.org/2004/01/turtle/} for earlier versions of Turtle
+%specification.}
+Notation3 \cite{BernersLee2011},
+N-Triples \cite{Beckett2001},
+JSON-LD \ldots,
+RDF/JSON \ldots,
+Languages for specific subsets of RDF, e.g.\ the Manchester OWL Syntax
+\ldots
+
+
+% Part Two is methodological formulation and/or
+% theoretical development (fundamentals, princi-
+% ple and/or approach, etc.)
+%
+% An application paper may lightly touch Part Two
+
+\section{Methodology}
+
+How was aREF created?
+
+Goals: Text based markup formats must be human readble/writable and simple.
+
+
+% Part Three is prototyping, case study or experiment;
+\section{Encoding RDF data in aREF}
+
+\ldots
+
+% Part Four is critical evaluation against related
+% works, and the conclusion.
+\section{Conclusions}
+
+
+\begin{itemize}
+    \item Summarize the benefits of aREF.
+    \item Mention limitations.
+\end{itemize}
+
+\ldots
+
+% was briefly demonstarted at SWIB13
+% ...
+
+%\subsection{}\label{s1.1}
+
+%\begin{figure}[t]
+%\includegraphics{}
+%\caption{Figure caption.}\label{f1}
+%\end{figure}
+
+%\begin{table*}
+%\caption{} \label{t1}
+%\begin{tabular}{lll}
+%\hline
+%&&\\
+%&&\\
+%\hline
+%\end{tabular}
+%\end{table*}
+
+\bibliography{aref}
+
+\end{document}
